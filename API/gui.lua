@@ -2,7 +2,6 @@ dofile("/os/API/graph.lua")
 
 --[[
     TODO: Сделать объект gui контролирующий дебаг
-    TODO: Сделать в TextBlock VerticalAlignment
     FIXME: Расставь наконец коментарии. Сам не понимаешь что пишешь
 ]]
 

@@ -227,3 +227,12 @@ end
     Button кнопочка 
 ]]
 
+Button = {}
+
+function Button:new(x, y, width, height)
+    local obj = Container:new(x, y, width, height)
+        obj.Content = ""
+        obj.onMouseClick = nil
+        obj.TextColor = 
+        --TODO: Дописать
+end

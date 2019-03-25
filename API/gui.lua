@@ -1,4 +1,4 @@
-dofile("/os/API/graph.lua")
+dofile("/DifferentOS/API/graph.lua")
 
 --[[
     TODO: Сделать объект gui контролирующий дебаг

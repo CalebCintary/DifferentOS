@@ -1,3 +1,8 @@
-dofile("/os/API/logger.lua")
+--[[
+    base constants
+]]
+OS_PATH = "/DifferentOS/"
+API_PATH = OS_PATH.."API/"
 
-dofile("/os/API/gui.lua")
+dofile(OS_PATH.."header.lua")
+

@@ -1,4 +1,3 @@
-dofile("/DifferentOS/API/graph.lua")
 
 --[[
     TODO: Сделать объект gui контролирующий дебаг
@@ -223,3 +222,8 @@ function TextBlock:new(x, y, width, height)
     setmetatable(obj, self)
     self.__index = self; return obj
 end
+
+--[[
+    Button кнопочка 
+]]
+

@@ -1,4 +1,4 @@
-dofile("/DifferentOS/API/SText.lua")
+
 Graph = {}
 
 function Graph.Pixel(x, y, color)

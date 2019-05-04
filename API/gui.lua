@@ -10,6 +10,11 @@ local function extended(child, parent)
     setmetatable(child, {__index = parent})
 end
 
+--[[
+setmetatable(obj, self)
+self.__index = self; return obj    
+--]]
+
 function Container:new(x, y, width, height)
     local obj = {}
         obj.localX = x 
@@ -100,8 +105,7 @@ function Container:new(x, y, width, height)
     end
 
 
-    setmetatable(obj, self)
-    self.__index = self; return obj
+    
 end
 
 function Container:newFullscreen(Term)

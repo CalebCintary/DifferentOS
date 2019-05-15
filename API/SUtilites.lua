@@ -24,3 +24,17 @@ function Super.GetUndefindedValue()
         Тоесть нужен для сравнения
     ]]
 end
+
+function Super.IsContainsOfThis(object, table)
+    if (type(object) == type(table[1])) then
+        result = false
+        i = 1
+        while (result == false) and (i <= #table) do
+            if (object == table[i]) then result = true end
+            i = i + 1
+        end
+    else
+        error("SuperNotMatchingTypes in IsContainsOfThis function")
+    end
+    return result
+end

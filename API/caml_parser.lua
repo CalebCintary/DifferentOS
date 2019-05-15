@@ -14,7 +14,8 @@ function caml_parser.GetSceneFromFile(file_path)
     local file = fs.open(file_path, "r")
     local string_array = {}
     Super.SetType(string_array, "string_array")
-    local line = file.readLine() --Первая строчечка
+    local line = file.readLine() 
+    -- TODO: Что то допиши. Желательно программу
     if line ~= 
 end
 

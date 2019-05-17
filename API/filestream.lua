@@ -1,4 +1,5 @@
-dofile("DifferentOS/API/SUtilites.lua")
+print(shell.path())
+dofile(shell.dir().."/SUtilites.lua")
 file_stream = {}
 
 
@@ -11,8 +12,7 @@ function file_stream:new(path, mode)
     else
         error("FileIsNotExistsException > "..path)
     end
-
     --Mode error handler
-    
+    if Super.
 
 end

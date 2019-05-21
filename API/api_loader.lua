@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 function load_api(api_table)
     if (type(api_table) == "string") then
         api_table = { api_table } -- Проверка на мб вдруг там одно api
@@ -11,6 +12,16 @@ function load_api(api_table)
                     else
                         dofile("DifferentOS/API/"..api_table[i]..".lua")
                     end
+=======
+function load_api(table)
+    if (type(table) == "string") then
+        table = { table }
+    elseif (type(table) == "table") then
+        if (#table > 0) then
+            for i = 1, #table do
+                if fs.exists(table[i]) then
+                    dofile(shell.dir().."/"..table[i])
+>>>>>>> b44c6978a61a1b7a8bf0f7263fd8951c90ebea32
                 else
                     error("[api_loader.lua] Incorrect api name")
                 end

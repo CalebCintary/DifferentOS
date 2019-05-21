@@ -13,7 +13,6 @@ function file_stream:new(path, mode)
         error("FileIsNotExistsException > "..path)
     end
     --Mode error handler
-<<<<<<< HEAD
     if not(Super.IsContainsOfThis(mode, {"a", "w", "r"})) then
         error("[file_stream.lua] Mode is incorrect")
     end
@@ -25,9 +24,6 @@ function file_stream:new(path, mode)
 
     setmetatable(obj, self)
     self.__index = self;
-=======
-    --if Super.
->>>>>>> b44c6978a61a1b7a8bf0f7263fd8951c90ebea32
 
     return obj
 end

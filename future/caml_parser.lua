@@ -16,11 +16,7 @@ function caml_parser.GetSceneFromFile(file_path)
     Super.SetType(string_array, "string_array")
     local line = file.readLine() 
     -- TODO: Что то допиши. Желательно программу
-<<<<<<< HEAD
     
-=======
-  --  if line ~= 
->>>>>>> b44c6978a61a1b7a8bf0f7263fd8951c90ebea32
 end
 
 function caml_parser.GetScene(caml_string_array)

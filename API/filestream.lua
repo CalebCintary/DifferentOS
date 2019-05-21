@@ -1,5 +1,5 @@
-print(shell.path())
-dofile(shell.dir().."/SUtilites.lua")
+dofile("DifferentOS/API/api_loader.lua")
+load_api({"SUtilites"})
 file_stream = {}
 
 
@@ -13,6 +13,17 @@ function file_stream:new(path, mode)
         error("FileIsNotExistsException > "..path)
     end
     --Mode error handler
-    if Super.
+    if not(Super.IsContainsOfThis(mode, {"a", "w", "r"})) then
+        error("[file_stream.lua] Mode is incorrect")
+    end
 
+    local obj = {}
+    if (mode == ("a" or "w")) then
+        obj.file = io.open(path, mode)
+    end
+
+    setmetatable(obj, self)
+    self.__index = self;
+
+    return obj
 end

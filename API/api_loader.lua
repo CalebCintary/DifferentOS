@@ -4,7 +4,7 @@ function load_api(table)
         table = { table }
     elseif (type(table) == "table") then
         if (#table > 0) then
-            for local i = 1, #table do
+            for i = 1, #table do
                 if fs.exists(table[i]) then
                     dofile(shell.dir().."/"..table[i])
                 else

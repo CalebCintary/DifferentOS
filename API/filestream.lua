@@ -13,6 +13,6 @@ function file_stream:new(path, mode)
         error("FileIsNotExistsException > "..path)
     end
     --Mode error handler
-    if Super.
+    --if Super.
 
 end

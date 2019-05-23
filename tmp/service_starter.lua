@@ -1,0 +1,1 @@
+parallel.waitForAll(dofile("DifferentOS/services/checkforupdates/main.lua"), dofile("DifferentOS/services/net_service/main.lua"))

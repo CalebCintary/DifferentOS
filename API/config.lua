@@ -45,7 +45,7 @@ function Config:new(path)
 
     function obj:Close()
         self.__mode = 'v'
-        collectgarbage()
+        collectgarbage("collect")
     end
 
     setmetatable(obj, self)
